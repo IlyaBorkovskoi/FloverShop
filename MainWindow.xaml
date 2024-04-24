@@ -1,0 +1,36 @@
+﻿<Window x:Class="Cveti.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cveti"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid HorizontalAlignment="Center" Width="800" Background="#FF79A4BF" MinWidth="800" MinHeight="450" MaxWidth="800" MaxHeight="450" Height="450">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="182*"/>
+            <ColumnDefinition Width="88*"/>
+            <ColumnDefinition Width="123*"/>
+            <ColumnDefinition Width="384*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Кто вы?" HorizontalAlignment="Left" Margin="17,74,0,0" VerticalAlignment="Top" Height="44" Width="136" IsEnabled="False" FontSize="33" FontFamily="Times New Roman" FontWeight="Bold" FontStyle="Italic" Foreground="#FF100505" Grid.Column="2"/>
+        <Image Grid.Column="3" Height="370" Margin="36,67,0,0" VerticalAlignment="Top" Stretch="Fill" Grid.ColumnSpan="3" Cursor="Hand" Source="/14059.750x0.jpg"/>
+        <Label Grid.Column="4" Content="Кукушкины слезки" Margin="40,-7,65,0" VerticalAlignment="Top" Height="75" FontSize="40" RenderTransformOrigin="0.5,0.5" FontFamily="Palatino Linotype" FontWeight="Bold" FontStyle="Italic" Grid.ColumnSpan="2">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="1.061"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.481"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="Administrator" Grid.Column="2" Content="Администратор" Click="Administrator_Click" HorizontalAlignment="Left" Margin="17,154,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FF171823" FontFamily="Times New Roman" FontSize="22" Width="165" BorderBrush="{x:Null}" FontWeight="Bold"/>
+        <Button x:Name="Meneger" Grid.Column="2" Content="Менеджер" HorizontalAlignment="Left" Margin="17,0,0,0" VerticalAlignment="Center" Background="{x:Null}" Foreground="#FF171823" FontFamily="Times New Roman" FontSize="22" Width="155" BorderBrush="{x:Null}" FontWeight="Bold" Click="Meneger_Click"/>
+        <Button x:Name="Kassir" Grid.Column="2" Content="Кассир" HorizontalAlignment="Left" Margin="17,276,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FF171823" FontFamily="Times New Roman" FontSize="22" Width="155" BorderBrush="{x:Null}" FontWeight="Bold" Click="Kassir_Click"/>
+        <Button x:Name="Client" Grid.Column="2" Content="Клиент" HorizontalAlignment="Left" Margin="22,330,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FF171823" FontFamily="Times New Roman" FontSize="22" Width="155" BorderBrush="{x:Null}" FontWeight="Bold" Click="Client_Click"/>
+
+    </Grid>
+</Window>
