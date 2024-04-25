@@ -16,26 +16,26 @@ namespace Cveti
 
         private void Administrator_Click(object sender, RoutedEventArgs e)
         {
-            Proverka proverka = new Proverka();
-            proverka.Show();
+            Proverka admProverka = new Proverka();
+            admProverka.Show();
         }
 
         private void Meneger_Click(object sender, RoutedEventArgs e)
         {
-            Proverka proverka = new Proverka();
-            proverka.Show();
+            Proverka manProverka = new Proverka();
+            manProverka.Show();
         }
 
         private void Kassir_Click(object sender, RoutedEventArgs e)
         {
-            Proverka proverka = new Proverka();
-            proverka.Show();
+            Proverka kasProverka = new Proverka();
+            kasProverka.Show();
         }
 
         private void Client_Click(object sender, RoutedEventArgs e)
         {
-            Proverca proverca = new Proverca();
-            proverca.Show();
+            Proverca clProverca = new Proverca();
+            clProverca.Show();
         }
     }
 }
